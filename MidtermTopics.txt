@@ -1,0 +1,9 @@
+Analysis of algorithms: loops, recursion, dynamic programming (memoization)
+Sorting: insertion, quicksort, heapsort, mergesort
+Shuffling: Fischer Yates
+Searching: linear, binary, golden mean.
+Number theoretic algorithms: gcd, lcm, brute force trial division, Eratosthenes' powermod Fermat, Miller-Rabin
+GrowArray
+LinkedLists, Stacks, Queues
+Binary tree -inorder, preorder, postorder traversal
+Trie (insert, containsWord, containsPrefix)
