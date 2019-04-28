@@ -16,7 +16,7 @@ class Permute{
         count = 0;
         generate(n-1);
     }
-    void generate(int N){
+    void generate(int N){ //O(N!)
         if(N==0){
             doit();
             return;

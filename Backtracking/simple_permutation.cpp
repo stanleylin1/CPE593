@@ -16,7 +16,7 @@ class Permute{
         count = 0;
         generate(n-1);
     }
-    void generate(int N){
+    void generate(int N){ //O(2N!)
         if(N == 0){
             doit();
             return;
@@ -40,7 +40,7 @@ class Permute{
 };
 
 int main(){
-    int x[]={1,2,3,4,5,6,7};
-    Permute p(x,7);
+    int x[]={1,2,3};
+    Permute p(x,3);
     cout << p.numPerm() << endl;
 }
