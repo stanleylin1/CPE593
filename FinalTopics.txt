@@ -1,0 +1,5 @@
+Matrices
+String Algorithms
+Hashing
+Backtracking
+... and others not known yet
