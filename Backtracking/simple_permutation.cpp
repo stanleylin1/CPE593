@@ -35,7 +35,7 @@ class Permute{
         cout << endl;
     }
     int numPerm(){
-        return count;
+        return count; //n!
     }
 };
 

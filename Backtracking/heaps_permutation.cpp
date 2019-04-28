@@ -21,6 +21,11 @@ class Permute{
             doit();
             return;
         }
+        for(int c = 0; c <= N; c++){
+            generate(N-1);
+            swap(N % 2 ? data[0] : data[c], data[N]);
+        }
+        /*
         if(N%2 == 0){
             for(int c = 0; c<=N;c++){
                 generate(N-1);
@@ -33,6 +38,7 @@ class Permute{
                 swap(data[c],data[N]);
             }
         }
+        */
     }
     void doit() {
         count++;
@@ -42,7 +48,7 @@ class Permute{
         cout << endl;
     }
     int numPerm(){
-        return count;
+        return count; //n!
     }
 };
 
