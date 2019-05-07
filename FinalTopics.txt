@@ -1,5 +1,11 @@
-Matrices
-String Algorithms
-Hashing
-Backtracking
-... and others not known yet
+Matrices: Multiplication, Guassian Elimintation w/ partial pivoting, Representations of matricies
+
+String Algorithms:  Boyer-Moore, Finite State, LCS(Longest common subsequence)
+
+Hashing: Linear probing, Linear Chaining, Perfect Hashing, Functions for strings and pointers
+
+Backtracking: Simple/Heap Permuations
+
+Graphs: DFS(Recursive & Iterative), BFS(Iterative), isConnected, Floyd Warshall(pseudocode), 
+Bellman-Ford, Prim, Kruskal
+

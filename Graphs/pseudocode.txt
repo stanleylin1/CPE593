@@ -1,0 +1,88 @@
+DFS Recursive O(V^2) omega(v) if sparse not using matrix
+g.DFS(v)
+    visited<-[false,false,false]
+    g.DFS2(v,visited)
+end
+
+List version
+g.DFS2(v,visited)
+    visited[v]<-true
+    print(v)
+    for each v2 in adjacent(v)
+        if NOT visited[v2]
+            g.DFS2(v2,visited)
+        end
+    end
+end
+
+Matrix version
+g.DFS2(visited,v)
+    visited[v]<-true
+    for i<-0 to v-1
+        if isAdjacent(v,i) AND NOT visited[v]
+            g.DFS2(visited, i)
+        end
+    end
+end
+
+DFS Iterative
+g.DFS(v)
+    visited<-[false,false,...]
+    stack<-empty
+    stack.push(v)
+    visited[v]<-true
+    while NOT stack.empty()
+        v<-stack.pop()
+        print(v)
+        foreach v2 in adjacent(v)
+            if NOT visited[v2]
+                stack.push(v2)
+                visited[v2]<-true
+            end
+        end
+    end
+end
+
+BFS Iterative
+g.BFS(v)
+    visited<-[false,false,...]
+    queue<-empty
+    queue.enqueue(v)
+    visited[v]<-true
+    while NOT queue.empty()
+        v<-queue.dequeue()
+        print(v)
+        foreach v2 in adjacent(v)
+            if NOT visited [v2]
+                queue.enqueue(v2)
+                visited[v2]<-true
+            end
+        end
+    end
+end
+
+isConnected 
+bool<-g.isConnected()
+    visited<-g.DFS(r)
+    for i<-0 to V   
+        if NOT visited[i]
+            return false
+        end
+        return true
+    end
+
+Floyd Warshall O(V^3)
+dist = V * V
+for each vertex v
+    dist[v][v]=0
+end
+for each edge(u,v)
+    dist[u][v] = w(u,v)
+end
+
+for k from 1 to V
+    for i from 1 to V
+        for j from 1 to V
+            if dist[i][j] > dist[i][k]+dist[k][j]
+                dist[i][j] = dist[i][k]+dist[k][j]
+            end
