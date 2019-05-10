@@ -9,3 +9,48 @@ Backtracking: Simple/Heap Permuations
 Graphs: DFS(Recursive & Iterative), BFS(Iterative), isConnected, Floyd Warshall(pseudocode), 
 Bellman-Ford, Prim, Kruskal
 
+Notes:
+Graphs
+Adjacency Matrix
+Initialize theta(V^2)
+isAdjacent(i,j) O(1)
+findAllAdjacent(i) O(V)
+Building for a graph of V O(V^2)
+For a adjacency matrix graph with V edges, what is the cost to find whether vertex i is adjacent to vertex j or k O(1)
+Adjacency List
+Initialization O(E)
+isAdjacent(i,j) O(V) omega(1)
+findALlAdjacent O(V) omega(1)
+DFS and BFS O(V^2)
+isConnected O(V^2)
+Floyd Warshall O(V^3)
+Bellman Ford O(V*E)
+Prim Matrix O(V^2) List O(VlogV + ElogV)
+Kruskal O(E log E)
+
+Backtracking
+simple permutation O(2N!) -> O(N!)
+heaps O(N!)
+
+String
+BoyerMoore O(n/k * m) -> O(n) n = length of search, k = length of target m = num words
+LCS 
+Finite State O(n) for any number of searches
+
+Hashing
+
+Matrices
+Lower triangular, upper triangular, rectangular
+initilize, add O(n^2)
+multiply O(n^3)
+diagonal, tridiagonal
+initialize, add, multiply O(n)
+guassian elimintation O(n^3)
+partialpivot O(n^2)
+
+Hashing
+Linear probing with 50% empty O(1)
+99% empty O(1)
+99% full O(n)
+
+

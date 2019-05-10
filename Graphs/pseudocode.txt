@@ -19,7 +19,7 @@ Matrix version
 g.DFS2(visited,v)
     visited[v]<-true
     for i<-0 to v-1
-        if isAdjacent(v,i) AND NOT visited[v]
+        if isAdjacent(v,i) AND NOT visited[i]
             g.DFS2(visited, i)
         end
     end

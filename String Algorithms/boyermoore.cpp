@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int boyceMoore(string search, string target)
+int boyerMoore(string search, string target) //O(n) O(n/k)
 {
     int table[256];
     int n = search.length();
@@ -34,5 +34,5 @@ int main()
 {
     string search = "dajsshellomaskld";
     string target = "hello";
-    cout << "Found at index: " << boyceMoore(search, target);
+    cout << "Found at index: " << boyerMoore(search, target);
 }

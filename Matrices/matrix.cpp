@@ -52,7 +52,7 @@ int main()
         }
     }
     cout << endl;
-    //Multiplication O(n^2) O(m*n*p)
+    //Multiplication O(n^3) O(m*n*p)
     int m = 3; //Number of rows in matrix 1
     int n = 3; //Number of columns in matrix 2
     int p = 3; //Number of columns in matrix 1 and number of rows in matrix 2 MUST be the same
